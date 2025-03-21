@@ -5,8 +5,7 @@ This is a basic live transcription script to process incoming audio stream and t
 
 - The model used is Whisper v3 turbo. Any model could be used instead but hardware performance is a bottleneck.
 - The script will send data to be processed in chunks (sentences) instead of sending it in a time-bound method (i.e. every 1 second)
-- According to different papers, the natural pause time in English is 300-450 milli-seconds. Thus, the script will send a chunk when it senses a sentence stop.
-
+- According to different papers, the natural pause time in English is 300-450 milliseconds. Thus, the script will process a chunk when it senses a pause.
 
 ## References
 
